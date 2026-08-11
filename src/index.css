@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDFCFB;
+    color: #1A1817;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar for editorial luxury feel */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #B89B64;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8E7443;
+}
+
+/* Editorial aesthetic custom utilities */
+.editorial-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #7D736A;
+}
+
+.editorial-divider {
+  height: 1px;
+  width: 100%;
+  background-color: #E8E3DC;
+}
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E3DC;
+  box-shadow: 0 4px 20px -4px rgba(26, 24, 23, 0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  border-color: #D3C9BE;
+  box-shadow: 0 12px 32px -6px rgba(26, 24, 23, 0.08);
+}
+
+.editorial-image-frame {
+  overflow: hidden;
+  position: relative;
+  background-color: #F7F4EF;
+}
+
+.editorial-image-frame img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-image-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* Gold shimmer gradient utility */
+.gold-shimmer {
+  background: linear-gradient(135deg, #DFC078 0%, #B89B64 50%, #8E7443 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #B89B64 0%, #CFA958 50%, #7D6331 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(184, 155, 100, 0.35);
+}
+
+.bg-champagne {
+  background-color: #F7F3EC;
+}
+
+.bg-ivory {
+  background-color: #FDFCFB;
+}
+
+.bg-paper {
+  background-color: #FAF8F5;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Aura Modern Jewellery",
+  "description": "A luxury e-commerce experience for fine and modern jewellery, crafted with timeless elegance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
